@@ -1,0 +1,36 @@
+.spns_special_x300, .spns_special_x894, .spns_special_x1170, .spns_istari_x300, .spns_istari_x1170 {
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    position: relative;
+    display: none;
+}
+.b-spns-special_x300 img, .b-spns-special_x894 img, .b-spns-special_x1170 img, .b-spns-istari_x300 img, .b-spns-istari_x1170 img {
+    max-width: 100%;
+    display: none;
+}
+/* Основной файл */
+@import url(https://shiki-theme.web.app/import/main.css);
+/* Стили обложки профиля */
+@import url(https://shiki-theme.web.app/import/profile-cover.css);
+/* Шрифт Roboto */
+@import url(https://shiki-theme.web.app/import/font-roboto.css);
+/* Изменения профиля v1.0 */
+@import url(https://shiki-theme.web.app/import/profile-update.1.css);
+/* Изменения профиля v1.1 */
+@import url(https://shiki-theme.web.app/import/profile-update.1.1.css);
+/* Тема «Палитра Shikimori» */
+@import url(https://shiki-theme.web.app/import/theme-default.css);
+
+/* Настройки переменных темы */
+@media{:root {
+  /* Обложка профиля */
+  --user-cover: url(https://img.playbook.com/TeqCQT2TU_CCWRJU8cw4hJqXAoP1FeIvrCoUTrcztyU/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9jNTM5/MThiMC0xNGViLTRm/OWYtYjdmMy1iZWYy/OTVmYWE4ZWQ.webp);
+  /* Фон сайта */
+  --user-background: url(https://img.playbook.com/TeqCQT2TU_CCWRJU8cw4hJqXAoP1FeIvrCoUTrcztyU/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9jNTM5/MThiMC0xNGViLTRm/OWYtYjdmMy1iZWYy/OTVmYWE4ZWQ.webp);
+}}
+
+/* Моя обложка в профиле */
+.p-profiles .profile-head[data-user-id="1315361"]::before {
+  display: block; /* Отображение обложки */
+  background-position: center 50%;
+}
